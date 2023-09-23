@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+}
+
+.header-container{
+    border: 1px solid black;
+    height: 250px;
+}
+
+.header-row-1{
+    border: 1px solid black;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75em;
+}
+
+.header-row-1 > div, nav{
+    width: 30%;
+    border: 1px solid black;
+}
+
+.service-links-list, .account-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    margin-top: 10%;
+}
+
+.service-links-list > li:hover, .account-list > li:hover{
+    text-decoration: underline;
+}
+
+#hm_logo_div{
+    border: 1px solid black;
+    height: 50%;
+    width: 20%;
+    margin: 10% auto;
+}
+
+#hm_logo_div > img{
+    height: 100%;
+    width: 100%;
+}
+
+.account-list{
+    justify-content: center;
+}
+
+.account-list > li{
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header-row-2{
+    border: 1px solid black;
+    height: 30%;
+    display: flex;
+}
+
+.header-row-2-side-divs{
+    width: 20%;
+    border: 1px solid black;
+}
+
+.header-row-2-nav{
+    border: 1px solid black;
+    width: 60%;
+}
+
+.header-row-2-nav > ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3%;
+    list-style: none;
+    font-weight: 500;
+}
+
+.search-div{
+    height: 40%;
+    width: 55%;
+    margin: 5% auto;
+    border-bottom: 1px solid black;
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.search-div > input{
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    height: 80%;
+    width: 70%;
+    float: right;
+}
+
+.header-row-3{
+    border: 1px solid black;
+    height: 20%;
+}
+
+.header-row-3 > h5{
+    margin-top: 1%;
+}

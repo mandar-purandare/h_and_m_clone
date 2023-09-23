@@ -1,0 +1,15 @@
+.homebody-container{
+    height: 2400px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.homebody-side-div{
+    border: 1px solid black;
+    width: 20%;
+}
+
+.homebody-centre-div{
+    border: 1px solid black;
+    width: 60%;
+}
