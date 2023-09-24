@@ -1,0 +1,13 @@
+.article > h1{
+    margin-top: 2%;
+    letter-spacing: 0.1em;
+}
+
+.article > p{
+    margin-top: 5%;
+    font-size: 0.75em;
+}
+
+.read-more{
+    text-decoration: underline;
+}

@@ -1,18 +1,18 @@
-h4,p{
+.left-menu > h4, .left-menu > p{
     text-align: left;
     margin-left: 10%;
 }
 
-h4{
+.left-menu > h4{
     margin-top: 10%;
 }
 
-p{
+.left-menu > p{
     font-size: 0.75em;
     font-weight: 500;
     margin-top: 5%;
 }
 
-p:hover{
+.left-menu > p:hover{
     text-decoration: underline;
 }

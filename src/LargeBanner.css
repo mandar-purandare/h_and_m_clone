@@ -2,4 +2,38 @@
     height: 545px;
     width: 800px;
     border: 1px solid black;
+    background-image: url('./Images/home-decor.jpeg');
+    background-size: 100% 100%;
+    /* position: relative; */
+}
+
+.custom-small-banner {
+       background-color: transparent;
+       color: white;
+       height: 40%;
+       /* position: absolute; */
+       margin-top: 45%;
+       border: transparent;
+}
+
+.custom-small-banner > h3{
+    font-size: 2.5em;
+    margin-top: 5%;
+}
+
+.custom-small-banner > p{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.inner-banner-top{
+    margin-top: 0%;
+}
+
+.towels{
+    background-image: url('./Images/towels.jpeg');
+}
+
+.bedroom{
+    background-image: url('./Images/bedroom.jpeg');
 }

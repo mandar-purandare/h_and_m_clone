@@ -1,12 +1,12 @@
 import React from 'react';
 import './SmallBanner.css';
 
-function SmallBanner({category,quote}) {
+function SmallBanner({category,quote,customClass}) {
   return (
-    <div className='small-banner'>
+    <div className={`small-banner ${customClass}`}>
         <h3>{category}</h3>
         <p>{quote}</p>
-        <button>Shop Now</button>
+        <div className='shop-now-button'>Shop now</div>
     </div>
   )
 }

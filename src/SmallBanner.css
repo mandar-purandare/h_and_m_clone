@@ -3,4 +3,51 @@
     width: 800px;
     border: 1px solid black;
     margin-bottom: 5%;
+    background-color: rgb(95,95,95);
+    color: white;
+}
+
+.small-banner > h3{
+    margin-top: 3%;
+}
+
+.small-banner > p{
+    font-size: 0.75em;
+    margin: 1% 30% 2% 30%;
+}
+
+.shop-now-button{
+    height: 2em;
+    width: 11%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 500;
+}
+
+.homely-gifts{
+    background-image: url('./Images/homely-gifts.jpeg');
+    background-size: 100% 100%;
+    color:black;
+    margin-top: 5%;
+}
+
+.homely-gifts > .shop-now-button{
+    background-color: black;
+    color: white;
+}
+
+.home-news{
+    background-image: url('./Images/home-news.png');
+    background-size: 100% 100%;
+    color:black;
+    margin-top: 5%;
+}
+
+.home-news > .shop-now-button{
+    background-color: black;
+    color: white;
 }
