@@ -1,6 +1,9 @@
 import React from 'react'
 import './Footer.css'
 import LeftMenu from './LeftMenu'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquareFacebook, faTwitter, faPinterest, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import big_logo from './Images/h&m_big_logo.png';
 
 function Footer() {
 
@@ -22,10 +25,23 @@ const options = [
                 <h4>READ MORE </h4>
             </div>
         </div>
-        {/* <div className='social-media'>
+        <div className='social-media'>
         <FontAwesomeIcon icon={faSquareFacebook} style={{color: "#222222",}} />
-        </div> */}
-        
+        <FontAwesomeIcon icon={faTwitter} style={{color: "#222222",}} />
+        <FontAwesomeIcon icon={faInstagram} style={{color: "#222222",}} />
+        <FontAwesomeIcon icon={faYoutube} style={{color: "#222222",}} />
+        <FontAwesomeIcon icon={faPinterest} style={{color: "#222222",}} />
+        </div>
+        <div className='copyright'>
+            <p className='copyright-text'>The content of this site is copyright-protected and is the property of H & M Hennes & Mauritz AB.</p>
+            <p className='copyright-readmore'>READ MORE</p>
+        </div>
+        <div className='big-logo'>
+            <img src={big_logo} alt='h_and_m_logo'/>
+        </div>
+        <div>
+            <p>INDIA |Rs.</p>
+        </div>
     </div>
   )
 }

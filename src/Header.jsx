@@ -6,8 +6,19 @@ import account_user_icon from './Images/account-user-icon.png';
 import heart_icon from './Images/heart-icon.png';
 import shopping_bag_icon from './Images/shopping-bag-icon.png';
 import magnifying_glass from './Images/magnifying-glass.png';
+import { useState } from 'react';
+import SignIn from './SignIn';
 
 function Header() {
+
+   const [signInModalDisplay, setSignInModalDisplay] = useState(false);
+
+   function showSignIn(){
+         setSignInModalDisplay(signInModalDisplay =>  signInModalDisplay = true);
+        //  alert(signInModalDisplay);
+   }
+
+   
 
    const categories = ['Ladies','Men','Divided','Baby','Kids','H&M HOME','Sport','Sustainability','Sale'];
 
@@ -15,6 +26,7 @@ function Header() {
 
   return (
     <div className='header-container'>
+        <SignIn display={signInModalDisplay} setDisplay={setSignInModalDisplay}/>
         <div className='header-row-1'>
             <nav>
                 <ul className='service-links-list'>
@@ -28,7 +40,7 @@ function Header() {
             </div>
             <nav>
                 <ul className='account-list'>
-                    <li><img src={account_user_icon} alt='account user icon'/>Sign in</li>
+                    <li onClick={showSignIn} ><img src={account_user_icon} alt='account user icon'/>Sign in</li>
                     <li><img src={heart_icon} alt='heart icon'/>Favourites</li>
                     <li><img src={shopping_bag_icon} alt='shopping bag icon'/>Shopping bag (0)</li>
                 </ul>

@@ -42,3 +42,28 @@
 .footerLists > p{
     margin-top: 1.5em;
 }
+
+.social-media{
+    width: 20%;
+    margin: auto;
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.copyright-text{
+    margin-top: 2%;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.copyright-readmore{
+    font-size: 0.8em;
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.copyright-readmore:hover{
+    text-decoration: underline;
+}

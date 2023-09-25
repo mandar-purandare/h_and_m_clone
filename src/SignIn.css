@@ -1,0 +1,78 @@
+.sign-in-modal{
+    width: 500px;
+    height: 550px;
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    top: 7%;
+    left: 30%;
+}
+
+.title-and-close-button{
+    display: flex;
+    justify-content: center;
+}
+
+.title-and-close-button > h2 {
+    padding: 5% 40% 0% 5%;
+}
+
+.title-and-close-button > div{
+    padding: 5% 5% 0% 25%;
+    font-size: 2em;
+}
+
+.title-and-close-button > div:hover{
+    cursor: pointer;
+}
+
+.sign-in-modal > p {
+    width: 90%;
+    font-size: 0.8em;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.sign-in-modal > label, .sign-in-modal > input{
+    float: left;
+    margin-left: 10%;
+}
+
+.sign-in-modal > label{
+    margin-top: 5%;
+}
+
+.sign-in-modal > input{
+    height: 7%;
+}
+
+.sign-in-modal #email{
+    width: 80%;
+}
+
+
+
+.password-flex-div{
+    display: flex;
+    /* justify-content:space-evenly; */
+    float: left;
+    height: 8%;
+    border: 1px solid black;
+    margin-left: 10%;
+    width: 81%;
+    margin-right: 6%;
+}
+
+.password-flex-div > input{
+    width: 80%;
+    margin-left: 0%; 
+}
+
+.sign-in-modal #show-password{
+    border: 1px solid black;
+    width: 20%;
+    float: right;
+   
+    /* margin-right: 5%; */
+}
