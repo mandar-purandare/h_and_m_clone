@@ -2,7 +2,35 @@
   text-align: center;
 }
 
-.App-logo {
+.App-Blur{
+  /* top, transparent black, faked with gradient */ 
+  background: linear-gradient(
+                                rgba(0, 0, 0, 0.7), 
+                                rgba(0, 0, 0, 0.7)
+                              );
+  text-align: center;
+}
+
+.App-Blur img, .App-Blur + .homebody-container img {
+  filter: brightness(30%);
+}
+
+.App-Blur  .header-container input:not(.sign-in input){
+  filter: brightness(30%);
+}
+
+.App-Blur .large-banner, .App-Blur .small-banner, .App-Blur .footer{
+  filter: brightness(30%);
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +63,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

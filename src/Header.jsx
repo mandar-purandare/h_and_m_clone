@@ -9,13 +9,13 @@ import magnifying_glass from './Images/magnifying-glass.png';
 import { useState } from 'react';
 import SignIn from './SignIn';
 
-function Header() {
+function Header({appBlur, setAppBlur}) {
 
    const [signInModalDisplay, setSignInModalDisplay] = useState(false);
 
    function showSignIn(){
          setSignInModalDisplay(signInModalDisplay =>  signInModalDisplay = true);
-        //  alert(signInModalDisplay);
+         setAppBlur(appBlur => appBlur = 'App-Blur');
    }
 
    
@@ -26,7 +26,7 @@ function Header() {
 
   return (
     <div className='header-container'>
-        <SignIn display={signInModalDisplay} setDisplay={setSignInModalDisplay}/>
+        <SignIn display={signInModalDisplay} setDisplay={setSignInModalDisplay} appBlur={appBlur} setAppBlur={setAppBlur}/>
         <div className='header-row-1'>
             <nav>
                 <ul className='service-links-list'>
