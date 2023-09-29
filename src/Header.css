@@ -3,12 +3,13 @@
 }
 
 .header-container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 250px;
+    /* background-color: rgb(250,249,248); */
 }
 
 .header-row-1{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 50%;
     display: flex;
     justify-content: space-between;
@@ -17,7 +18,7 @@
 
 .header-row-1 > div, nav{
     width: 30%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .service-links-list, .account-list{
@@ -34,7 +35,7 @@
 }
 
 #hm_logo_div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 50%;
     width: 20%;
     margin: 10% auto;
@@ -56,18 +57,18 @@
 }
 
 .header-row-2{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 30%;
     display: flex;
 }
 
 .header-row-2-side-divs{
     width: 20%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .header-row-2-nav{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 60%;
 }
 
@@ -84,7 +85,7 @@
     height: 40%;
     width: 55%;
     margin: 5% auto;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     /* border: 1px solid black; */
     display: flex;
 }
@@ -99,7 +100,7 @@
 }
 
 .header-row-3{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 20%;
 }
 

@@ -1,15 +1,15 @@
-.homebody-container{
+.menbody-container{
     height: 2800px;
     /* border: 1px solid black; */
     display: flex;
 }
 
-.homebody-side-div{
+.menbody-side-div{
     /* border: 1px solid black; */
     width: 20%;
 }
 
-.homebody-centre-div{
+.menbody-centre-div{
     /* border: 1px solid black; */
     width: 60%;
 }

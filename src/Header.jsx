@@ -8,6 +8,7 @@ import shopping_bag_icon from './Images/shopping-bag-icon.png';
 import magnifying_glass from './Images/magnifying-glass.png';
 import { useState } from 'react';
 import SignIn from './SignIn';
+import { useNavigate } from 'react-router-dom';
 
 function Header({appBlur, setAppBlur}) {
 
@@ -18,7 +19,12 @@ function Header({appBlur, setAppBlur}) {
          setAppBlur(appBlur => appBlur = 'App-Blur');
    }
 
-   
+   const router = useNavigate();
+
+   function goTo(category){
+         router('/'+ category);
+        // alert(category);
+   }
 
    const categories = ['Ladies','Men','Divided','Baby','Kids','H&M HOME','Sport','Sustainability','Sale'];
 
@@ -50,7 +56,7 @@ function Header({appBlur, setAppBlur}) {
             <div className='header-row-2-side-divs'></div>
             <nav className='header-row-2-nav'>
                 <ul>
-                    {categories.map(category => <li>{category}</li>)}
+                    {categories.map(category => <li onClick={()=>{goTo(category)}}>{category}</li>)}
                 </ul>
             </nav>
             <div className='header-row-2-side-divs'>
