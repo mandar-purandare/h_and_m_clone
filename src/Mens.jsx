@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
 import MenBody from './MenBody';
 
 function Mens({appBlur, setAppBlur}) {
@@ -16,9 +14,7 @@ function Mens({appBlur, setAppBlur}) {
 
   return (
     <div className='mens'>
-        <Header appBlur={appBlur} setAppBlur={setAppBlur}/>
         <MenBody leftMenuHeadings={headings} leftMenuOptions={options} articleHeading={articleHeading} articleText={articleText}/>
-        <Footer/>
     </div>
   )
 }

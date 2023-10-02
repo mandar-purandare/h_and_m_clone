@@ -1,0 +1,36 @@
+.row-1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.row-1-left-div{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.big-images-div{
+    height: 40%;
+    width: 47%;
+}
+
+.big-images-div img{
+    height: 100%;
+    width: 100%;
+}
+
+.row-1-right-div{
+    width: 35%;
+    height: 50%;
+}
+
+.title-and-heart{
+    display: flex;
+    justify-content: space-around;
+}
+
+.black-border{
+    border: 1px solid black;
+}
