@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Mens from './Mens';
 import SingleProduct from './SingleProduct';
+import ShoppingCart from './ShoppingCart';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Route exact path='/Men' element={<Mens appBlur={appBlur} setAppBlur={setAppBlur} />}/>
         <Route exact path='/H&M HOME' element={<Home/>}/>
         <Route exact path='/singleproduct' element={<SingleProduct/>}/>
+        <Route exact path='/shoppingcart' element={<ShoppingCart/>}/>
       </Routes>
 
       <Footer/>
