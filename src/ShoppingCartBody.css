@@ -45,7 +45,7 @@
 
 .item-details-container{
     width: 80%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .title-price-delete{
@@ -108,6 +108,123 @@
     align-items: center;
 }
 
+.discounts{
+    display: flex;
+    justify-content: space-between;
+}
+
+.discounts h5{
+    padding: 3%;
+    margin-top: 2%;
+    font-weight: 500;
+}
+
+.login-request{
+    text-align: start;
+    margin-left: 3%;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+.login-btn{
+    width: 90%;
+    height: 4em;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+
+.gray-line{
+    width: 90%;
+    margin: auto;
+    color: gray;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.order-amount{
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-amount span:nth-child(1){
+    padding: 2%;
+    padding-left: 4%;
+}
+
+.order-amount span:nth-child(2){
+    padding: 2%;
+    padding-right: 4%;
+}
+
+.black-line{
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.total{
+    font-weight: 800;
+    font-size: 1em;
+}
+
+.checkout-btn{
+    width: 90%;
+    height: 4em;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    font-weight: 700;
+    margin-bottom: 2%;
+    margin-top: 10%;
+}
+
+.refund-terms{
+    font-size: 0.7em;
+    color: gray;
+    text-align: start;
+    width: 90%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.member-benifits{
+    width: 28%;
+    margin-left: 61%;
+    padding: 1%;
+    margin-top: 3%;
+}
+
+.member-benifits > *{
+    text-align: left;
+    margin-left: 4%;
+}
+
+.member-benifits > p{
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 2%;
+    width: 90%;
+}
+
+.delivery-and-return-options{
+    width: 28%;
+    margin-left: 61%;
+    padding: 1%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .black-border{
     border: 1px solid black;
+}
+
+.underline{
+    text-decoration: underline;
 }

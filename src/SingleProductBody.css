@@ -181,8 +181,18 @@
     margin-top: 2%;
     display: flex;
     justify-content: space-between;
+    
 }
 
+.sliding-images-container  > div {
+    position: relative;
+}
+
+.sliding-images-container i{
+    position: absolute;
+    top: 85%;
+    right: 10%;
+}
 
 
 .sliding-images-container  > div img{

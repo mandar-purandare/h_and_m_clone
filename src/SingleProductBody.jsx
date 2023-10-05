@@ -66,6 +66,7 @@ function SingleProductBody({dataObj}) {
                     dataObj.row2Data.map((obj) =>(
                         <div>
                             <div className='black-border'><img src={obj.url}/></div>
+                            <i class="fa-regular fa-heart fa-xl"></i>
                             <h5>{obj.name}</h5>
                             <h5>Rs.{obj.price}</h5>
                         </div>
@@ -80,6 +81,7 @@ function SingleProductBody({dataObj}) {
                     dataObj.row3Data.map((obj) =>(
                         <div>
                             <div className='black-border'><img src={obj.url}/></div>
+                            <i class="fa-regular fa-heart fa-xl"></i>
                             <h5>{obj.name}</h5>
                             <h5>Rs.{obj.price}</h5>
                         </div>

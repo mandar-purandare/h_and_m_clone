@@ -48,7 +48,7 @@ function Header({appBlur, setAppBlur}) {
                 <ul className='account-list'>
                     <li onClick={showSignIn} ><img src={account_user_icon} alt='account user icon'/>Sign in</li>
                     <li><img src={heart_icon} alt='heart icon'/>Favourites</li>
-                    <li><img src={shopping_bag_icon} alt='shopping bag icon'/>Shopping bag (0)</li>
+                    <li onClick={() => (goTo('shoppingcart'))}><img src={shopping_bag_icon} alt='shopping bag icon'/>Shopping bag (0)</li>
                 </ul>
             </nav>
         </div>
