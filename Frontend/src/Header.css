@@ -107,3 +107,9 @@
 .header-row-3 > h5{
     margin-top: 1%;
 }
+
+.logged-in-user{
+    display: flex;
+    width: 150%;
+    justify-content: space-between;
+}

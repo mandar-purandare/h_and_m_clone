@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Header.css';
 import services_list_menu_icon from './Images/services_list_menu_icon.png';
 import hm_logo from './Images/h&m_logo.png';
@@ -9,8 +9,10 @@ import magnifying_glass from './Images/magnifying-glass.png';
 import { useState } from 'react';
 import SignIn from './SignIn';
 import { useNavigate } from 'react-router-dom';
+import { AuthContext } from './Context/Auth.context.js';
 
 function Header({appBlur, setAppBlur}) {
+   const {loginState, Logout} = useContext(AuthContext);
 
    const [signInModalDisplay, setSignInModalDisplay] = useState(false);
 
@@ -46,7 +48,15 @@ function Header({appBlur, setAppBlur}) {
             </div>
             <nav>
                 <ul className='account-list'>
-                    <li onClick={showSignIn} ><img src={account_user_icon} alt='account user icon'/>Sign in</li>
+                    {loginState?.payload?.email?
+                        <div className='logged-in-user'>
+                            <div>Welcome, {loginState?.payload?.email}</div>
+                            <button onClick={Logout}>Logout</button>
+                        </div>
+                        :
+                        <li onClick={showSignIn} >{console.log(loginState)}<img src={account_user_icon} alt='account user icon'/>Sign in</li>
+                    }
+                    
                     <li><img src={heart_icon} alt='heart icon'/>Favourites</li>
                     <li onClick={() => (goTo('shoppingcart'))}><img src={shopping_bag_icon} alt='shopping bag icon'/>Shopping bag (0)</li>
                 </ul>
